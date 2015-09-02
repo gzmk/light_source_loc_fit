@@ -20,7 +20,7 @@ bestLight = [];
 
 fitname1 = '40percent_lightLoc.mat';
 
-[LightBest, BestF2] = gridsearch(@renderIm_2params_light, LB_2, UB_2, 10, 0.8, 1e-7, 1000, 1, 1);
+[LightBest, BestF2] = gridsearch(@renderIm_2params_light, LB_2, UB_2, 5, 0.5, 1e-7, 1000, 1, 1);
 % [LightBest,BestF2,Iters2] = Grid_Search(2, LB_2', UB_2', NumDiv_2, MinDeltaX_2, 1e-7, 1000, 'renderIm_2params_light');
 sprintf('This is LightBest:');
 LightBest;
